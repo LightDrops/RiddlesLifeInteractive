@@ -83,7 +83,7 @@ ol, ul { list-style: none;}
 li.facebook { background-image:url("../images/facebook.png"); }
 li.googlePlus { background-image:url("../images/googlePlus.png"); }
 li.twitter { background-image:url("../images/twitter.png"); }
-li.linkedin { background-image:url("../images/linkedin.png"); }
+li.linkedin { background-image:url("../images/linkedIn.png"); }
 li.behance { background-image:url("../images/behance.png"); }
 
 .logo {
@@ -138,6 +138,7 @@ li.behance { background-image:url("../images/behance.png"); }
 	font-style: italic;
 	top: 50px;
 	position: relative;
+	font-weight: 300;
 }
 
 /* ---FOOTER--- */
