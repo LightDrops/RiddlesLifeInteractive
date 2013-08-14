@@ -1,0 +1,160 @@
+/* ---RESET--- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #2980b9;
+	width: 100%;
+	height:100%;
+
+	overflow: hidden;
+}
+
+ol, ul { list-style: none;}
+
+/* ---HELPER CLASSES--- */
+
+.clear { clear:both; }
+.wrapper { width: 980px; margin: 0 auto;}
+.white-text { color: #fff;}
+.black-text { color: black;}
+
+/* ---HEADER--- */
+
+#header {
+	margin: 0px;
+	width: 100%;
+	height: 135px;
+}
+
+.social {
+	position: relative; ;
+	font-size: 12px;
+	list-style:none; 
+	width:500px; 
+	margin-top: 50px;
+	display: block;
+}
+.social li { 
+	display:inline; 
+	float:left; 
+	background-repeat:no-repeat;
+}
+.social li a { 
+	display:block; 
+	width:33px; 
+	height:33px; 
+	padding-right:10px; 
+	text-decoration:none; 
+}
+.social li a strong { 
+	font-weight:normal; 
+	left:20px; 
+	top:-1px; 
+	color:#fff; 
+	padding:3px; 
+	z-index:9999;
+ 	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.75); 
+ 	background-color:rgba(0, 0, 0, 0.7);
+ 	-moz-border-radius:3px; 
+ 	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+ 	-webkit-border-radius:3px;
+ 	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+ 	border-radius:3px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+li.facebook { background-image:url("../images/facebook.png"); }
+li.googlePlus { background-image:url("../images/googlePlus.png"); }
+li.twitter { background-image:url("../images/twitter.png"); }
+li.linkedin { background-image:url("../images/linkedin.png"); }
+li.behance { background-image:url("../images/behance.png"); }
+
+.logo {
+	margin-top: -70px;
+	margin-right: 0px;
+	float: right;
+	display: block;
+}
+
+.navigation {
+	margin-top: 10px;
+	float: right;
+	right:0px;
+
+}
+
+.navigation li {
+	list-style: none;
+	display: inline;
+}
+
+.navigation li a {
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.navigation li strong {
+	text-transform: uppercase;
+}
+
+/* ---CONTENT AREA--- */
+#content {
+	height: 100%;
+}
+
+#content .content-image {
+
+	height: 430px;
+	float:left;
+	position: fixed;
+	bottom:30px;
+	left: 0px;
+}
+
+#content .content-text-home {
+	padding-right: 140px;
+	float: right;
+	width: 500px;
+	height: 200px;
+	text-align: right;
+	font-size: 32px;
+	font-style: italic;
+	top: 50px;
+	position: relative;
+}
+
+/* ---FOOTER--- */
+#footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: #fff;
+	height: 60px;
+	width: 100%;
+	z-index: -1000;
+}
+
+#footer li {
+	padding-left: 50px;
+	display: inline;
+	text-transform: uppercase;
+	font-size:12px;
+	float: right;
+	margin-top: 20px;
+}
