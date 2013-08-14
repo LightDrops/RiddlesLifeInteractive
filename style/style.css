@@ -106,13 +106,20 @@ li.behance { background-image:url("../images/behance.png"); }
 }
 
 .navigation li a {
+
 	text-decoration: none;
 	font-size: 16px;
 }
 
 .navigation li strong {
+	padding-left:10px;
 	text-transform: uppercase;
 }
+
+.nav-bar {
+	padding-left:10px;
+}
+
 
 /* ---CONTENT AREA--- */
 #content {
