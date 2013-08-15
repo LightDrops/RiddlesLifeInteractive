@@ -23,7 +23,7 @@ body {
 	background-color: #2980b9;
 	width: 100%;
 	height:100%;
-
+  transition: 3s;
 	overflow: hidden;
 }
 
@@ -168,12 +168,14 @@ li.behance { background-image:url("../images/behance.png"); }
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -50%;
+  top: -60%;
 }
 #sequence .sequence-canvas li img {
-	height: 100%;
+	height: 90%;
 	width: auto;
   float: left;
+  position: fixed;
+  top: 22%;
 }
 #sequence > .sequence-canvas li > * {
   position: absolute;
@@ -191,14 +193,14 @@ li.behance { background-image:url("../images/behance.png"); }
 
 
 .title {
-  left: 65%;
+  left: 50%;
   width: 35%;
   opacity: 0;
   bottom: 1%;
+  padding-right: 10px
 }
 
 .animate-in .title {
-  left: 50%;
   opacity: 1;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -208,7 +210,6 @@ li.behance { background-image:url("../images/behance.png"); }
 }
 
 .animate-out .title {
-  left: 35%;
   opacity: 0;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -218,14 +219,14 @@ li.behance { background-image:url("../images/behance.png"); }
 }
 
 .subtitle {
-  left: 35%;
+  left: 50%;
   width: 35%;
   opacity: 0;
   top: 101%;
+  padding-right:10px;
 }
 
 .animate-in .subtitle {
-  left: 50%;
   opacity: 1;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -235,7 +236,6 @@ li.behance { background-image:url("../images/behance.png"); }
 }
 
 .animate-out .subtitle {
-  left: 65%;
   opacity: 0;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -300,5 +300,19 @@ transition: .2s all linear;
   font-size: 32px;
   text-align: right;
   font-style: italic;
+  font-weight: 300;
 }
 
+.content-title {
+  font-size: 24px;
+  text-align: right;
+  font-style: italic;
+}
+
+.content-subtitle {
+  color:#fff;
+  font-size: 20px;
+  text-align: right;
+  font-style: italic;
+  font-weight: 300;
+}
