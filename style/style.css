@@ -39,9 +39,11 @@ ol, ul { list-style: none;}
 /* ---HEADER--- */
 
 #header {
+	position: absolute;
 	margin: 0px;
 	width: 100%;
 	height: 135px;
+	z-index: 50;
 }
 
 .social {
@@ -128,25 +130,9 @@ li.behance { background-image:url("../images/behance.png"); }
 
 #content .content-image {
 
-	height: 430px;
-	float:left;
-	position: fixed;
-	bottom:30px;
-	left: 0px;
+
 }
 
-#content .content-text-home {
-	padding-right: 140px;
-	float: right;
-	width: 500px;
-	height: 200px;
-	text-align: right;
-	font-size: 32px;
-	font-style: italic;
-	top: 50px;
-	position: relative;
-	font-weight: 300;
-}
 
 /* ---FOOTER--- */
 #footer {
@@ -165,4 +151,143 @@ li.behance { background-image:url("../images/behance.png"); }
 	font-size:12px;
 	float: right;
 	margin-top: 20px;
+}
+
+#sequence {
+ border-style: solid;
+ border-width: 1px;
+ border-collapse: #000;
+ position: ;
+
+}
+#sequence > .sequence-canvas {
+  height: 100%;
+  width: 100%;
+}
+#sequence > .sequence-canvas > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -50%;
+}
+#sequence .sequence-canvas li img {
+	height: 100%;
+	width: auto;
+	float:left;
+	left: 0px;
+}
+#sequence > .sequence-canvas li > * {
+  position: absolute;
+  /* only cause the left and opacity properties to transition */
+  -webkit-transition-property: left, opacity;
+  -moz-transition-property: left, opacity;
+  -ms-transition-property: left, opacity;
+  -o-transition-property: left, opacity;
+  transition-property: left, opacity;
+}
+
+#sequence-preloader {
+  background: #d9d9d9;
+}
+
+h2 {
+  color: white;
+  font-family: "Sirin Stencil", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Ruluko", serif;
+}
+
+.title {
+  font-size: 3.4em;
+  left: 65%;
+  width: 35%;
+  opacity: 0;
+  bottom: 1%;
+  z-index: 50;
+}
+
+.animate-in .title {
+  left: 50%;
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.animate-out .title {
+  left: 35%;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.subtitle {
+  color: black;
+  font-size: 2em;
+  left: 35%;
+  width: 35%;
+  opacity: 0;
+  top: 101%;
+}
+
+.animate-in .subtitle {
+  left: 50%;
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.animate-out .subtitle {
+  left: 65%;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.model {
+  left: 30%;
+  bottom: -48%;
+  opacity: 0;
+  position: relative;
+  height: auto !important;
+  max-height: 568px !important;
+  width: 450px;
+  min-width: 225px;
+  /* prevents the model from shrinking when the browser is resized */
+  max-width: auto;
+}
+
+.animate-in .model {
+  left: 15%;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.animate-out .model {
+  left: 15%;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
