@@ -189,24 +189,12 @@ li.behance { background-image:url("../images/behance.png"); }
   background: #d9d9d9;
 }
 
-h2 {
-  color: white;
-  font-family: "Sirin Stencil", serif;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-family: "Ruluko", serif;
-}
 
 .title {
-  font-size: 3.4em;
   left: 65%;
   width: 35%;
   opacity: 0;
   bottom: 1%;
-  z-index: 50;
 }
 
 .animate-in .title {
@@ -230,8 +218,6 @@ h3 {
 }
 
 .subtitle {
-  color: black;
-  font-size: 2em;
   left: 35%;
   width: 35%;
   opacity: 0;
@@ -299,5 +285,20 @@ transition: .2s all linear;
 
 .sequence-pagination li.current a {
   color: #000;
+}
+
+/* TEXT FIELDS */
+
+.home-title {
+  font-size: 32px;
+  text-align: right;
+  font-style: italic;
+}
+
+.home-subtitle {
+  color:#fff;
+  font-size: 32px;
+  text-align: right;
+  font-style: italic;
 }
 
