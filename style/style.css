@@ -291,3 +291,17 @@ h3 {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+
+.sequence-pagination li a {
+  cursor: pointer;
+  color: #fff;
+}
+
+.sequence-pagination li a:hover {
+ 
+}
+
+.sequence-pagination li.current a {
+  color: #000;
+}
+
