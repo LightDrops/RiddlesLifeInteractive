@@ -173,8 +173,7 @@ li.behance { background-image:url("../images/behance.png"); }
 #sequence .sequence-canvas li img {
 	height: 100%;
 	width: auto;
-	float:left;
-	left: 0px;
+  float: left;
 }
 #sequence > .sequence-canvas li > * {
   position: absolute;
@@ -260,7 +259,6 @@ h3 {
 }
 
 .model {
-  left: 30%;
   bottom: -48%;
   opacity: 0;
   position: relative;
@@ -273,23 +271,21 @@ h3 {
 }
 
 .animate-in .model {
-  left: 15%;
+  left: ;
   opacity: 1;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+-webkit-transition: .2s all linear;
+-moz-transition: .2s all linear;
+-o-transition: .2s all linear;
+transition: .2s all linear; 
 }
 
 .animate-out .model {
-  left: 15%;
+  left: -300px;
   opacity: 0;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+-webkit-transition: .2s all linear;
+-moz-transition: .2s all linear;
+-o-transition: .2s all linear;
+transition: .2s all linear; 
 }
 
 .sequence-pagination li a {
