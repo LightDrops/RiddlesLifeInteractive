@@ -49,12 +49,40 @@
 	<img class="logo clear" src="images/logo.png" />
 
 	<ol class="navigation clear sequence-pagination">
-		<li><a class="white-text" href="#"><strong>home</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a class="white-text" href="#"><strong>services</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a class="white-text" href="#"><strong>vission&mission</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a class="white-text" href="#"><strong>career</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a class="white-text" href="#"><strong>team</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a class="white-text" href="#"><strong>contact</a></strong></li>
+		<li><a id ="home" class="white-text" href="#"><strong>home</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
+		<li><a id = "services" class="white-text" href="#"><strong>services</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
+		<li><a id ="vision-and-misson" class="white-text" href="#"><strong>vission&mission</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
+		<li><a id ="career" class="white-text" href="#"><strong>career</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
+		<li><a id="team" class="white-text" href="#"><strong>team</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
+		<li><a id="contact" class="white-text" href="#"><strong>contact</a></strong></li>
+
+		<script>
+
+		$("#home").click(function() { 
+ 		$('body').css({'background-color':'#2980b9'}); 
+		});
+		$("#services").click(function() { 
+ 		$('body').css({'background-color':'#0ea89a'}); 
+		});
+
+		$("#vision-and-misson").click(function() { 
+ 		$('body').css({'background-color':'#c60751'}); 
+		});
+
+		$("#career").click(function() { 
+ 		$('body').css({'background-color':'#8e44ad'}); 
+		});
+
+		$("#team").click(function() { 
+ 		$('body').css({'background-color':'#2ecc71'}); 
+		});
+
+		$("#contact").click(function() { 
+ 		$('body').css({'background-color':'#d35400'}); 
+		});
+
+
+		</script>
 	</ol>
 	</div>
 	</div>
