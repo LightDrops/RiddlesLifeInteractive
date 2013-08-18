@@ -1,34 +1,44 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Riddles Interactive</title>
+	<title></title>
 
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style/classes.css">
+	<link rel="stylesheet" type="text/css" href="style/responsive.css">
+	<link rel="Stylesheet" type="text/css" href="style/style.css" />
 
-	<!-- fonts -->
+	<!-- FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300italic' rel='stylesheet' type='text/css'>
 
-	<!-- scripts -->
-	<script src="js/jquery.min.js"></script>
-		<script>
-		 if (typeof jQuery == 'undefined'){
-		    document.write(unescape('%3Cscript src="js/jquery-min.js" %3E%3C/script%3E'));
-		 }
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="scripts/jquery-min.js"></script>
+	<script type="text/javascript" src="scripts/parallax.min.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34546066-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
 	</script>
-	<script src="js/jquery.sequence-min.js"></script>
-	<script src="js/sequencejs-options.modern-slide-in.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 
 </head>
-<body>
-	
-	
-	
-	<div id="header"> 
-	<div class="wrapper">
-	
-			<ul class="social" id="jquery">
+<body class="lghtgrey-bg">
+
+
+<div class="wrapper">
+	<div id="header">
+
+	<div id="social-icons" class="">
+			<ol class="social" id="jquery">
 				<li class="facebook">
 					<a href="#"><strong>Facebook</strong></a>
 				</li>
@@ -44,137 +54,120 @@
 				<li class="behance">
 					<a href="#"><strong>Behance</strong></a>
 				</li>
-			</ul>
-	
-	<img class="logo clear" src="images/logo.png" />
+			</ol>
+	</div>
 
-	<ol class="navigation clear sequence-pagination">
-		<li><a id ="home" class="white-text" href="#"><strong>home</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a id = "services" class="white-text" href="#"><strong>services</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a id ="vision-and-misson" class="white-text" href="#"><strong>vission&mission</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a id ="career" class="white-text" href="#"><strong>career</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a id="team" class="white-text" href="#"><strong>team</a></strong><img class="nav-bar" src="images/nav-bar.jpg" /></li>
-		<li><a id="contact" class="white-text" href="#"><strong>contact</a></strong></li>
+	<div id="company-logo" class=""></div>
 
-		<script>
+	<div id="navigation" class="clear">
 
-		$("#home").click(function() { 
- 		$('body').css({'background-color':'#2980b9'}); 
-		});
-		$("#services").click(function() { 
- 		$('body').css({'background-color':'#0ea89a'  }); 
-		});
-
-		$("#vision-and-misson").click(function() { 
- 		$('body').css({'background-color':'#c60751'}); 
-		});
-
-		$("#career").click(function() { 
- 		$('body').css({'background-color':'#8e44ad'}); 
-		});
-
-		$("#team").click(function() { 
- 		$('body').css({'background-color':'#2ecc71'}); 
-		});
-
-		$("#contact").click(function() { 
- 		$('body').css({'background-color':'#d35400'}); 
-		});
-
-
-		</script>
+	<ol class="">
+		<li class="">
+			<a id ="home-nav" href="#">home</a><img class="nav-bar" src="images/nav-bar.jpg" />
+		</li>
+		<li>
+			<a id = "services-nav" href="#">services</a><img class="nav-bar" src="images/nav-bar.jpg" />
+		</li>
+		<li>
+			<a id ="vision-nav" href="#">vission&mission</a><img class="nav-bar" src="images/nav-bar.jpg" />
+		</li>
+		<li>
+			<a id ="career-nav" href="#">career</a><img class="nav-bar" src="images/nav-bar.jpg" />
+		</li>
+		<li>
+			<a id="team-nav" href="#">team</a><img class="nav-bar" src="images/nav-bar.jpg" />
+		</li>
+		<li><a id="contact-nav" href="#">contact</a>
+		</li>
 	</ol>
+
 	</div>
-	</div>
-
-	<div id="content">
-		
-
-		<div class="sequence-theme">
-			<div id="sequence">
-
-
-
-
-				<ul class="sequence-canvas">
-					<li class="animate-in">
-						<h2 class="title home-title">Hi!</h2>
-						<h3 class="subtitle home-subtitle">We are a team that stands with growing minds. We dream Dreams and are firm in accomplishing it.
-						</h3>
-						<img class="model" src="images/image1.png" />
-					</li>
-					<li>
-						<h2 class="title content-title">Services</h2>
-						<h3 class="subtitle content-subtitle">To meet your needs, all through the process of User Interface designs, Riddles Interactive incorporates all phases of UI / UX research. We do Aesthetic and Innovative UI designs that give your customers easy way to interact with your product and service.
-						<br /><br />
-						Apart from UI / UX we do content generation, want of a website which no one can deny. Our focus is on quality rather than quantity by managing one client at a time. 
-						</h3>
-						<img class="model" src="images/image2.png" />
-					</li>
-					<li>
-						<h2 class="title content-title">Vision & Mission</h2>
-						<h3 class="subtitle content-subtitle">Riddles Interactive has a name in the design arena, where our stand is unique. We work hard to maintain our position and uphold a good relation with the clients. We always aim to stamp our footprint in the right manner.
-						<br /><br />
-						 Work at Riddles is not a laborious task that we do lethargically. Here, it is fun and entertainment without losing seriousness.
-						</h3>
-						<img class="model" src="images/image3.png" />
-					</li>
-										<li>
-						<h2 class="title content-title">Career</h2>
-						<h3 class="subtitle content-subtitle">Career at Riddles Interactive is seriousness united with pleasure. Here we need youthful mind with Creativity, Common sense and Competency. We don’t believe in Certificates, Degrees and More marks . . .
-						<br /><br />
-						<p class="black-text">Mind with Sparks ?</p>
-						Do mail your portfolio to<br />
-						jobs@riddlesinteractive.com
-						</h3>
-						<img class="model" src="images/image4.png" />
-					</li>
-										<li>
-						<h2 class="title content-title">Team</h2>
-						<h3 class="subtitle content-subtitle">Self- Motivated Method, Sincere Attitude, Dedicated Work, Youthful Thoughts
-						That much Smart is our team.
-						</h3>
-						<img class="model" src="images/image5.png" />
-					</li>
-										<li>
-						<h2 class="title content-title">Contact</h2>
-						<h3 class="subtitle content-subtitle">A/703,<br />
-						Narnarayan Complex,<br />
-						Swastik X roads,<br />
-						Navrangpura, <br />
-						Ahmedabad-380009<br />
-						India<br /><br />
-						Call @ 9633551112<br />
-						info@riddlesinteractive.com<br /><br />
-						Locate us on google maps.
-						</h3>
-						<img class="model" src="images/image6.png" />
-					</li>
-				</ul>
-
-				
-
-
-
-			</div>
-		</div>
-
-
-
-		<u></u>
-	</div>
-	
-
-
+</div> <! -- wrapper end -->
+</div> <!-- header end -->
 
 	<div id="footer">
 		<div class="wrapper">
-			<ol class="footer-text">
+			<ol>
 				<li>made with love in india</li>
 				<li>2013 riddles interactive pvt limited</li>
 			</ol>
-		</div>
+		</div> <!-- wrapper end -->
+	</div> <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+<div id="content" class="">
+
+	<div id="home" class="page">
+			<h2>Hi!</h2>
+			<h3>We are a team that stands with growing minds. We dream Dreams and are firm in accomplishing it.
+			</h3>
+			<img class="" src="images/image1.png" />
 	</div>
 
-</body> 
+	<div id="services" class="page">
+			<h2 class="clear	">Services</h2>
+			<h3 class="clear">To meet your needs, all through the process of User Interface designs, Riddles Interactive incorporates all phases of UI / UX research. We do Aesthetic and Innovative UI designs that give your customers easy way to interact with your product and service.
+			<br /><br />
+			Apart from UI / UX we do content generation, want of a website which no one can deny. Our focus is on quality rather than quantity by managing one client at a time. 
+			</h3>
+			<img class="" src="images/image2.png" />
+	</div>
+
+	<div id="vision" class="page">
+		<h2 class="">Vision & Mission</h2>
+		<h3 class="">Riddles Interactive has a name in the design arena, where our stand is unique. We work hard to maintain our position and uphold a good relation with the clients. We always aim to stamp our footprint in the right manner.
+		<br /><br />
+		Work at Riddles is not a laborious task that we do lethargically. Here, it is fun and entertainment without losing seriousness.
+		</h3>
+		<img class="" src="images/image3.png" />
+	</div>
+
+	<div id="career" class="page">
+			<h2 class="">Career</h2>
+			<h3 class="">Career at Riddles Interactive is seriousness united with pleasure. Here we need youthful mind with Creativity, Common sense and Competency. We don’t believe in Certificates, Degrees and More marks . . .
+			<br /><br />
+			<p class="black-text">Mind with Sparks ?</p>
+			Do mail your portfolio to<br />
+			jobs@riddlesinteractive.com
+			</h3>
+			<img class="" src="images/image4.png" />
+	</div>
+
+	<div id="team" class="page">
+			<h2 class="">Team</h2>
+			<h3 class="">Self- Motivated Method, Sincere Attitude, Dedicated Work, Youthful Thoughts
+			That much Smart is our team.
+			</h3>
+			<img class="" src="images/image5.png" />
+	</div>
+
+	<div id="contact" class="page">
+			<h2 class="">Contact</h2>
+			<h3 class="">A/703,<br />
+			Narnarayan Complex,<br />
+			Swastik X roads,<br />
+			Navrangpura, <br />
+			Ahmedabad-380009<br />
+			India<br /><br />
+			Call @ 9633551112<br />
+			info@riddlesinteractive.com<br /><br />
+			Locate us on google maps.
+			</h3>
+			<img class="" src="images/image6.png" />
+	</div>
+
+	</div> <!-- content end -->
+
+
+
+
+</body>
 </html>
