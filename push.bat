@@ -1,7 +1,7 @@
 @echo off
 xcopy /s /y E:\xampp\htdocs\RiddlesInteractive\style style\
 xcopy /y E:\xampp\htdocs\RiddlesInteractive\images images\
-xcopy /y E:\xampp\htdocs\RiddlesInteractive\scripts js\
+xcopy /y E:\xampp\htdocs\RiddlesInteractive\scripts scripts\
 copy /y E:\xampp\htdocs\RiddlesInteractive\index.html index.html
 git remote set-url origin git@github.com:ReDrops/RiddlesLifeInteractive.git
 git add index.html
