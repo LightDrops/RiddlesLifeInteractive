@@ -126,9 +126,12 @@ li.behance { background-image:url("../images/behance.png"); }
 	bottom: -110%;
 }
 
-#content .content-text {
+#content img {
 
-	font-size: 12px;
+	position: absolute;
+	vertical-align: ;
+	z-index: 100;
+	bottom:33px;
 
 }
 
