@@ -1,0 +1,185 @@
+/* ----- RESET ----- */
+*{outline: 0;padding: 0;margin: 0;border: 0;}
+body,p,ul,ol,dl,textarea,input {font-family: 'ubuntu'}
+
+/* ----- TEXT ----- */
+.uppercase{text-transform:uppercase;}
+.lowercase{text-transform:lowercase;}
+
+.txtcenter{text-align:center;}
+.txtleft{text-align:left;}
+.txtright{text-align:right;}
+
+/* ----- BLOCK ---- */
+
+.inline{display: inline;}
+.block{display: block;}
+
+/* ----- DIV POSITION ----- */
+.absolute{position:absolute;}
+.relative{position:relative;}
+
+.bottom{bottom:0px;}
+.top{top:0px;}
+
+.center{margin-left: auto;margin-right: auto;}
+.right {float:right;}
+.left  {float:left;}
+.clear{clear:both;}
+
+.zabove{z-index:10;}
+.znorm {z-index:auto;}
+.zbelow{z-index:-10;}
+
+/* ----- DIV DECORATION ----- */
+.clickable{cursor:pointer;}
+
+.show  {display:block;}
+.hide  {display:none;}
+.faded {opacity:0.4;}
+.opaque{opacity:1.0;}
+
+.rounded   {-moz-border-radius: 15px;border-radius: 15px;padding-left:10px;padding-right:10px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.shadow    { -moz-box-shadow: 0 0 5px 5px #888;-webkit-box-shadow: 0 0 5px 5px#888;box-shadow: 0 0 5px 5px #888;}
+.dropshadow{ -moz-box-shadow: 10px 10px 5px #888;-webkit-box-shadow: 10px 10px 5px #888;box-shadow: 10px 10px 5px #888;}
+
+
+.slant     { -webkit-transform: rotate(10deg);-moz-transform: rotate(10deg);-ms-transform: rotate(10deg);-o-transform: rotate(10deg);transform: rotate(10deg);zoom: 1;}
+.slantleft { -webkit-transform: rotate(-10deg);-moz-transform: rotate(-10deg);-ms-transform: rotate(-10deg);-o-transform: rotate(-10deg);transform: rotate(-10deg);zoom: 1;}
+.tilt     { -webkit-transform: rotate(25deg);-moz-transform: rotate(25deg);-ms-transform: rotate(25deg);-o-transform: rotate(25deg);transform: rotate(25deg);zoom: 1;}
+.tiltleft { -webkit-transform: rotate(-25deg);-moz-transform: rotate(-25deg);-ms-transform: rotate(-25deg);-o-transform: rotate(-25deg);transform: rotate(-25deg);zoom: 1;}
+.rotate90 { -webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);zoom: 1;}
+.rotate270{ -webkit-transform: rotate(270deg);-moz-transform: rotate(270deg);-ms-transform: rotate(270deg);-o-transform: rotate(270deg);transform: rotate(270deg);zoom: 1;}
+
+/* ----- COLORS ----- */
+  /* -- Text -- */
+.yellow{color:#CCC400;}
+.orange{color:#CC6F00;}
+.red   {color:#CC0200;}
+.purple{color:#C300CC;}
+.blue  {color:#0100CC;}
+.cyan  {color:#00CBCC;}
+.green {color:#0BCC00;}
+.brown {color:#6E4437;}
+.grey  {color:#808080;}
+.white {color:white;}
+.black {color:black;}
+
+.lghtyellow{color:#FFF84C;}
+.lghtorange{color:#FFAD4C;}
+.lghtred   {color:#FF4E4C;}
+.lghtpurple{color:#F74CFF;}
+.lghtblue  {color:#4D4CFF;}
+.lghtcyan  {color:#4CFEFF;}
+.lghtgreen {color:#56FF4C;}
+.lghtbrown {color:#8F4E36;}
+.lghtgrey  {color:#C0C0C0;}
+
+.drkyellow{color:#7F7B00;}
+.drkorange{color:#7F4500;}
+.drkred   {color:#7F0100;}
+.drkpurple{color:#79007F;}
+.drkblue  {color:#01007F;}
+.drkcyan  {color:#007E7F;}
+.drkgreen {color:#077F00;}
+.drkbrown {color:#3D261F;}
+.drkgrey  {color:#404040;}
+
+  /* -- Backgrounds -- */
+.yellow-bg{background-color:#CCC400;}
+.orange-bg{background-color:#CC6F00;}
+.red-bg   {background-color:#CC0200;}
+.purple-bg{background-color:#C300CC;}
+.blue-bg  {background-color:#0100CC;}
+.cyan-bg  {background-color:#00CBCC;}
+.green-bg {background-color:#0BCC00;}
+.brown-bg {background-color:#6E4437;}
+.grey-bg  {background-color:#808080;}
+.white-bg {background-color:white;}
+.black-bg {background-color:black;}
+
+.lghtyellow-bg{background-color:#FFF84C;}
+.lghtorange-bg{background-color:#FFAD4C;}
+.lghtred-bg   {background-color:#FF4E4C;}
+.lghtpurple-bg{background-color:#F74CFF;}
+.lghtblue-bg  {background-color:#4D4CFF;}
+.lghtcyan-bg  {background-color:#4CFEFF;}
+.lghtgreen-bg {background-color:#56FF4C;}
+.lghtbrown-bg {background-color:#8F4E36;}
+.lghtgrey-bg  {background-color:#C0C0C0;}
+
+.drkyellow-bg{background-color:#7F7B00;}
+.drkorange-bg{background-color:#7F4500;}
+.drkred-bg   {background-color:#7F0100;}
+.drkpurple-bg{background-color:#79007F;}
+.drkblue-bg  {background-color:#01007F;}
+.drkcyan-bg  {background-color:#007E7F;}
+.drkgreen-bg {background-color:#077F00;}
+.drkbrown-bg {background-color:#3D261F;}
+.drkgrey-bg  {background-color:#404040;}
+
+  /* -- Hovers -- */
+.yellow-hvr:hover{color:#CCC400;}
+.orange-hvr:hover{color:#CC6F00;}
+.red-hvr:hover   {color:#CC0200;}
+.purple-hvr:hover{color:#C300CC;}
+.blue-hvr:hover  {color:#0100CC;}
+.cyan-hvr:hover  {color:#00CBCC;}
+.green-hvr:hover {color:#0BCC00;}
+.brown-hvr:hover {color:#6E4437;}
+.grey-hvr:hover  {color:#808080;}
+.white-hvr:hover {color:white;}
+.black-hvr:hover {color:black;}
+
+.lghtyellow-hvr:hover{color:#FFF84C;}
+.lghtorange-hvr:hover{color:#FFAD4C;}
+.lghtred-hvr:hover   {color:#FF4E4C;}
+.lghtpurple-hvr:hover{color:#F74CFF;}
+.lghtblue-hvr:hover  {color:#4D4CFF;}
+.lghtcyan-hvr:hover  {color:#4CFEFF;}
+.lghtgreen-hvr:hover {color:#56FF4C;}
+.lghtbrown-hvr:hover {color:#8F4E36;}
+.lghtgrey-hvr:hover  {color:#C0C0C0;}
+
+.drkyellow-hvr:hover{color:#7F7B00;}
+.drkorange-hvr:hover{color:#7F4500;}
+.drkred-hvr:hover   {color:#7F0100;}
+.drkpurple-hvr:hover{color:#79007F;}
+.drkblue-hvr:hover  {color:#01007F;}
+.drkcyan-hvr:hover  {color:#007E7F;}
+.drkgreen-hvr:hover {color:#077F00;}
+.drkbrown-hvr:hover {color:#3D261F;}
+.drkgrey-hvr:hover  {color:#404040;}
+
+  /* -- Background Hover -- */
+.yellow-bg-hvr:hover{background-color:#CCC400;}
+.orange-bg-hvr:hover{background-color:#CC6F00;}
+.red-bg-hvr:hover   {background-color:#CC0200;}
+.purple-bg-hvr:hover{background-color:#C300CC;}
+.blue-bg-hvr:hover  {background-color:#0100CC;}
+.cyan-bg-hvr:hover  {background-color:#00CBCC;}
+.green-bg-hvr:hover {background-color:#0BCC00;}
+.brown-bg-hvr:hover {background-color:#6E4437;}
+.grey-bg-hvr:hover  {background-color:#808080;}
+.white-bg-hvr:hover {background-color:white;}
+.black-bg-hvr:hover {background-color:black;}
+
+.lghtyellow-bg-hvr:hover{background-color:#FFF84C;}
+.lghtorange-bg-hvr:hover{background-color:#FFAD4C;}
+.lghtred-bg-hvr:hover   {background-color:#FF4E4C;}
+.lghtpurple-bg-hvr:hover{background-color:#F74CFF;}
+.lghtblue-bg-hvr:hover  {background-color:#4D4CFF;}
+.lghtcyan-bg-hvr:hover  {background-color:#4CFEFF;}
+.lghtgreen-bg-hvr:hover {background-color:#56FF4C;}
+.lghtbrown-bg-hvr:hover {background-color:#8F4E36;}
+.lghtgrey-bg-hvr:hover  {background-color:#C0C0C0;}
+
+.drkyellow-bg-hvr:hover{background-color:#7F7B00;}
+.drkorange-bg-hvr:hover{background-color:#7F4500;}
+.drkred-bg-hvr:hover   {background-color:#7F0100;}
+.drkpurple-bg-hvr:hover{background-color:#79007F;}
+.drkblue-bg-hvr:hover  {background-color:#01007F;}
+.drkcyan-bg-hvr:hover  {background-color:#007E7F;}
+.drkgreen-bg-hvr:hover {background-color:#077F00;}
+.drkbrown-bg-hvr:hover {background-color:#3D261F;}
+.drkgrey-bg-hvr:hover  {background-color:#404040;}

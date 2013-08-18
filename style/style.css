@@ -1,0 +1,157 @@
+body{
+	overflow:hidden;
+	width:100%;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 980px;
+
+}
+
+/* ----- HEADER ----- */
+#header {
+	position: relative;
+	top:0px;
+	z-index: 100;
+}
+
+.social {
+	font-size: 12px;
+	width:500px; 
+	margin-top:50px;
+}
+.social li { 
+	display:inline; 
+	float:left; 
+	background-repeat:no-repeat;
+}
+.social li a { 
+	opacity: 0; /* invisible text */
+	display:block; 
+	width:33px; 
+	height:33px; 
+	padding-right:10px; 
+	text-decoration:none; 
+}
+
+li.facebook { background-image:url("../images/facebook.png"); }
+li.googlePlus { background-image:url("../images/googlePlus.png"); }
+li.twitter { background-image:url("../images/twitter.png"); }
+li.linkedin { background-image:url("../images/linkedIn.png"); }
+li.behance { background-image:url("../images/behance.png"); }
+
+#company-logo {
+	margin-top: -40px;
+	float: right;
+	background-image: url("../images/logo.png");
+	height:114;
+	width:130;
+}
+
+
+#navigation {
+	float: right;
+	margin-top: 10px;
+}
+
+#navigation li {
+	list-style: none;
+	display: inline;
+}
+
+#navigation li a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#navigation li a:hover {
+	color: black;
+}
+
+#navigation img {
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+/* ----- FOOTER ----- */
+#footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: white;
+	height: 60px;
+	width: 100%;
+	z-index: 100;
+	
+	
+
+}
+
+#footer li {
+	padding-left: 50px;
+	display: inline;
+	text-transform: uppercase;
+	font-size:12px;
+	float: right;
+	margin-top: 20px;
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+}
+
+/* ----- CONTENT ----- */
+
+#content {
+
+	width:100%;
+	height:100%;
+}
+
+#content h2 {
+
+	float: right ;
+
+}
+
+#content h3 {
+	float: right ;
+	bottom: -110%;
+}
+
+#content .content-text {
+
+	font-size: 12px;
+
+}
+
+#home {
+background-color: #2980b9;
+}
+
+#services {
+background-color: #0ea89a;
+}
+
+#vision {
+background-color: #c60751;
+}
+
+#career {
+background-color: #8e44ad;
+}
+
+#team {
+background-color: #2ecc71;
+}
+
+#contact {
+background-color: #d35400;
+}
