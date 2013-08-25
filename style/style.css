@@ -115,18 +115,8 @@ li.behance { background-image:url("../images/behance.png"); }
 	height:100%;
 }
 
-#content h2 {
 
-	float: right ;
-
-}
-
-#content h3 {
-	float: right ;
-	bottom: -110%;
-}
-
-#content img {
+#content .page-image {
 
 	position: absolute;
 	vertical-align: ;
@@ -157,4 +147,63 @@ background-color: #2ecc71;
 
 #contact {
 background-color: #d35400;
+}
+
+#content-text {
+	position: absolute;
+	right: 20%;
+	text-align: right;
+	width: 500px;
+}
+
+.F32px {
+	font-size: 32px;
+}
+
+.F24px {
+	font-size: 24px;
+}
+
+.F20px {
+	font-size: 20px;
+}
+
+.Fitalic {
+	font-style: italic;
+}
+
+.Flight300 {
+	font-weight: 300;
+}
+
+.Flight200 {
+	font-weight: 200;
+}
+
+.Tblack {
+	color: #000;
+}
+
+.Twhite {
+	color: #fff;
+}
+
+.bottom20 {
+	bottom: 20%;
+}
+
+.bottom25 {
+	bottom: 25%;
+}
+
+.bottom30 {
+	bottom: 30%;
+}
+
+.bottom40 {
+	bottom: 40%;
+}
+
+.Tinline {
+	padding-left: 10px;
 }

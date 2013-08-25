@@ -8,11 +8,12 @@ $(document).ready(function () {
 			.add($("#team"))
 			.add($("#contact"));
 
-	parallax.background = $("body");
-
 //------------------------------------------------------------
 
-	parallax.home.onload=function(){
+
+
+
+		parallax.home.onload=function(){
 		setIgnoreHomeClick("home", " ");
 		setRightService("services", " ");
 		setRightVision("vision", " ");
@@ -21,7 +22,7 @@ $(document).ready(function () {
 		setRightContact("contact", " ");
 	};
 
-	parallax.services.onload=function(){
+		parallax.services.onload=function(){
 		setLeftHome("home", " ");
 		setIgnoreServiceClick("services", " ");
 		setRightVision("vision", " ");
@@ -118,6 +119,9 @@ $(document).ready(function () {
 		
 		$("#home-nav").show().unbind('click').click(function(){
 			parallax[page].right();
+
+			
+			
 		});
 	}
 
@@ -125,21 +129,28 @@ $(document).ready(function () {
 		
 		$("#home-nav").show().unbind('click').click(function(){
 			parallax[page].left();
+			$('#content #home-img').delay(1000)	.show('slide', {direction: 'left'}, 750);
+			
 		});
 	}
 
 	function setRightService(page, text){
 		
+
 		$("#services-nav").show().unbind('click').click(function(){
 			parallax[page].right();
-		});
-	}
+			$('#content #services-img').delay(1000)	.show('slide', {direction: 'left'}, 750);
 
+		});
+
+
+	}
 
 	function setLeftService(page, text){
 		
 		$("#services-nav").show().unbind('click').click(function(){
 			parallax[page].left();
+			$('#content #services-img').delay(1500)	.show('slide', {direction: 'left'}, 750);
 		});
 	}
 
@@ -204,5 +215,7 @@ $(document).ready(function () {
 	}
 
 parallax.home.show();
+parallax.speed = 1000;
+parallax.scaling = 'linear';
 
 });
