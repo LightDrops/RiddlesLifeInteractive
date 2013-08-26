@@ -8,12 +8,82 @@ $(document).ready(function () {
 			.add($("#team"))
 			.add($("#contact"));
 
-//------------------------------------------------------------
+// ----- Page Functions ----- //
 
+
+parallax.home.preload=function(){
+		parallax.last=function(){
+			$("img").hide("slide", { direction: "left" }, 250 );
+		}
+		$('#home-nav').css('color', 'black');
+		$('#services-nav').css('color', 'white');
+		$('#vision-nav').css('color', 'white');
+		$('#career-nav').css('color', 'white');
+		$('#team-nav').css('color', 'white');
+		$('#contact-nav').css('color', 'white');
+
+	};
+
+parallax.services.preload=function(){
+
+		$('#home-nav').css('color', 'white');
+		$('#services-nav').css('color', 'black');
+		$('#vision-nav').css('color', 'white');
+		$('#career-nav').css('color', 'white');
+		$('#team-nav').css('color', 'white');
+		$('#contact-nav').css('color', 'white');
+
+	};
+
+parallax.vision.preload=function(){
+
+		$('#home-nav').css('color', 'white');
+		$('#services-nav').css('color', 'white');
+		$('#vision-nav').css('color', 'black');
+		$('#career-nav').css('color', 'white');
+		$('#team-nav').css('color', 'white');
+		$('#contact-nav').css('color', 'white');
+
+	};
+
+parallax.career.preload=function(){
+
+		$('#home-nav').css('color', 'white');
+		$('#services-nav').css('color', 'white');
+		$('#vision-nav').css('color', 'white');
+		$('#career-nav').css('color', 'black');
+		$('#team-nav').css('color', 'white');
+		$('#contact-nav').css('color', 'white');
+
+	};
+
+parallax.team.preload=function(){
+
+		$('#home-nav').css('color', 'white');
+		$('#services-nav').css('color', 'white');
+		$('#vision-nav').css('color', 'white');
+		$('#career-nav').css('color', 'white');
+		$('#team-nav').css('color', 'black');
+		$('#contact-nav').css('color', 'white');
+
+	};
+
+parallax.contact.preload=function(){
+
+		$('#home-nav').css('color', 'white');
+		$('#services-nav').css('color', 'white');
+		$('#vision-nav').css('color', 'white');
+		$('#career-nav').css('color', 'white');
+		$('#team-nav').css('color', 'white');
+		$('#contact-nav').css('color', 'black');
+
+	};
 
 
 
 		parallax.home.onload=function(){
+
+
 		setIgnoreHomeClick("home", " ");
 		setRightService("services", " ");
 		setRightVision("vision", " ");
@@ -23,6 +93,7 @@ $(document).ready(function () {
 	};
 
 		parallax.services.onload=function(){
+
 		setLeftHome("home", " ");
 		setIgnoreServiceClick("services", " ");
 		setRightVision("vision", " ");
@@ -32,6 +103,7 @@ $(document).ready(function () {
 	};
 
 		parallax.vision.onload=function(){
+
 		setLeftHome("home", " ");
 		setLeftService("services", " ");
 		setIgnoreVisionClick("vision", " ");
@@ -41,6 +113,7 @@ $(document).ready(function () {
 	};
 
 		parallax.career.onload=function(){
+
 		setLeftHome("home", " ");
 		setLeftService("services", " ");
 		setLeftVision("vision", " ");
@@ -50,6 +123,7 @@ $(document).ready(function () {
 	};
 
 		parallax.team.onload=function(){
+
 		setLeftHome("home", " ");
 		setLeftService("services", " ");
 		setLeftVision("vision", " ");
@@ -59,6 +133,8 @@ $(document).ready(function () {
 	};
 
 		parallax.contact.onload=function(){
+
+
 		setLeftHome("home", " ");
 		setLeftService("services", " ");
 		setLeftVision("vision", " ");
@@ -66,7 +142,9 @@ $(document).ready(function () {
 		setLeftTeam("team", " ");
 		setIgnoreContactClick("contact", " ");
 	};
-//-------------------------------------------------------------
+
+
+//----- Ignore ----- //
 
 	function setIgnoreHomeClick(page, text){
 		
@@ -84,7 +162,7 @@ $(document).ready(function () {
 
 
 	function setIgnoreVisionClick(page, text){
-		
+
 		$("#vision-nav").show().unbind('click').click(function(){
 			parallax[page]();
 		});
@@ -113,15 +191,13 @@ $(document).ready(function () {
 
 
 
-	//---------------------------------------------------------
+	//----- Transition ----- //
 
 	function setRightHome(page, text){
 		
 		$("#home-nav").show().unbind('click').click(function(){
 			parallax[page].right();
 
-			
-			
 		});
 	}
 
@@ -129,28 +205,31 @@ $(document).ready(function () {
 		
 		$("#home-nav").show().unbind('click').click(function(){
 			parallax[page].left();
-			$('#content #home-img').delay(1000)	.show('slide', {direction: 'left'}, 750);
+			
 			
 		});
 	}
 
 	function setRightService(page, text){
-		
+
+
+
+
 
 		$("#services-nav").show().unbind('click').click(function(){
 			parallax[page].right();
-			$('#content #services-img').delay(1000)	.show('slide', {direction: 'left'}, 750);
+
+
 
 		});
-
-
 	}
+
 
 	function setLeftService(page, text){
 		
 		$("#services-nav").show().unbind('click').click(function(){
 			parallax[page].left();
-			$('#content #services-img').delay(1500)	.show('slide', {direction: 'left'}, 750);
+			
 		});
 	}
 
@@ -214,8 +293,33 @@ $(document).ready(function () {
 		});
 	}
 
+
+
+/*
+
+parallax.preload = function(){
+	
+	$("#home-img").hide("slide", { direction: "left" }, 250 );
+	$("#services-img").hide("slide", { direction: "left" }, 250 );
+	$("#vision-img").hide("slide", { direction: "left" }, 250 );
+	$("#career-img").hide("slide", { direction: "left" }, 250 );
+	$("#team-img").hide("slide", { direction: "left" }, 250 );
+	$("#contact-img").hide("slide", { direction: "left" }, 250 );
+};
+
+parallax.onload = function(){
+	$("#home-img").show("slide", { direction: "left" }, 250);
+	$("#services-img").show("slide", { direction: "left" }, 250);
+	$("#vision-img").show("slide", { direction: "left" }, 250);
+	$("#career-img").show("slide", { direction: "left" }, 250);
+	$("#team-img").show("slide", { direction: "left" }, 250);
+	$("#contact-img").show("slide", { direction: "left" }, 250);
+};
+
+*/
+
 parallax.home.show();
-parallax.speed = 1000;
+parallax.speed = 750;
 parallax.scaling = 'linear';
 
 });

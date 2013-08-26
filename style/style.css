@@ -49,6 +49,7 @@ li.behance { background-image:url("../images/behance.png"); }
 	margin-top: -40px;
 	float: right;
 	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
 	height:114;
 	width:130;
 }

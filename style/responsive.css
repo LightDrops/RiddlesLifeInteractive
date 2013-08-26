@@ -1,0 +1,40 @@
+/* 
+	1.Widescreen
+	2.Standard 
+	3.Tablet
+	4.Mobile
+*/
+
+/* ----- 1. Widescreen State ----- */
+
+
+
+
+
+
+
+/* ----- 2. Standard State ----- */
+
+@media only 
+screen and (max-width:1216px),
+screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+}
+
+/* ----- 3. Tablet State ----- */
+
+@media only
+screen and (max-width:1023px),
+screen and (min-device-width:321px) and (max-device-width:768px) and (orientation: portrait) {
+
+
+}
+
+/* ----- 4. Mobile State ----- */
+
+@media only 
+screen and (max-width : 767px),
+screen and (min-device-width : 320px) and (max-device-width : 480px) {
+body,p,ul,ol,dl,textarea,input {font-family: 'arial';}
+}
