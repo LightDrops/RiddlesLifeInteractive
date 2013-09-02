@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 
+
 	parallax.add($("#home"))
 			.add($("#services"))
 			.add($("#vision"))
@@ -8,31 +9,28 @@ $(document).ready(function () {
 			.add($("#team"))
 			.add($("#contact"));
 
-// ----- Page Functions ----- //
+// ----- NAVIGATION PRELOAD ----- //
 
 
 parallax.home.preload=function(){
-		parallax.last=function(){
-			$("img").hide("slide", { direction: "left" }, 250 );
-		}
+		
+		
 		$('#home-nav').css('color', 'black');
 		$('#services-nav').css('color', 'white');
 		$('#vision-nav').css('color', 'white');
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'white');
-
 	};
 
 parallax.services.preload=function(){
-
+		
 		$('#home-nav').css('color', 'white');
 		$('#services-nav').css('color', 'black');
 		$('#vision-nav').css('color', 'white');
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'white');
-
 	};
 
 parallax.vision.preload=function(){
@@ -80,66 +78,68 @@ parallax.contact.preload=function(){
 	};
 
 
+// ----- NAVIGATION ONLOAD ----- //
+
 
 		parallax.home.onload=function(){
 
-
 		setIgnoreHomeClick("home", " ");
-		setRightService("services", " ");
-		setRightVision("vision", " ");
-		setRightCareer("career", " ");
-		setRightTeam("team", " ");
-		setRightContact("contact", " ");
+		setService("services", " ");
+		setVision("vision", " ");
+		setCareer("career", " ");
+		setTeam("team", " ");
+		setContact("contact", " ");
+
 	};
 
 		parallax.services.onload=function(){
 
-		setLeftHome("home", " ");
+		setHome("home", " ");
 		setIgnoreServiceClick("services", " ");
-		setRightVision("vision", " ");
-		setRightCareer("career", " ");
-		setRightTeam("team", " ");
-		setRightContact("contact", " ");
+		setVision("vision", " ");
+		setCareer("career", " ");
+		setTeam("team", " ");
+		setContact("contact", " ");
 	};
 
 		parallax.vision.onload=function(){
 
-		setLeftHome("home", " ");
-		setLeftService("services", " ");
+		setHome("home", " ");
+		setService("services", " ");
 		setIgnoreVisionClick("vision", " ");
-		setRightCareer("career", " ");
-		setRightTeam("team", " ");
-		setRightContact("contact", " ");
+		setCareer("career", " ");
+		setTeam("team", " ");
+		setContact("contact", " ");
 	};
 
 		parallax.career.onload=function(){
 
-		setLeftHome("home", " ");
-		setLeftService("services", " ");
-		setLeftVision("vision", " ");
+		setHome("home", " ");
+		setService("services", " ");
+		setVision("vision", " ");
 		setIgnoreCareerClick("career", " ");
-		setRightTeam("team", " ");
-		setRightContact("contact", " ");
+		setTeam("team", " ");
+		setContact("contact", " ");
 	};
 
 		parallax.team.onload=function(){
 
-		setLeftHome("home", " ");
-		setLeftService("services", " ");
-		setLeftVision("vision", " ");
-		setLeftCareer("career", " ");
+		setHome("home", " ");
+		setService("services", " ");
+		setVision("vision", " ");
+		setCareer("career", " ");
 		setIgnoreTeamClick("team", " ");
-		setRightContact("contact", " ");
+		setContact("contact", " ");
 	};
 
 		parallax.contact.onload=function(){
 
 
-		setLeftHome("home", " ");
-		setLeftService("services", " ");
-		setLeftVision("vision", " ");
-		setLeftCareer("career", " ");
-		setLeftTeam("team", " ");
+		setHome("home", " ");
+		setService("services", " ");
+		setVision("vision", " ");
+		setCareer("career", " ");
+		setTeam("team", " ");
 		setIgnoreContactClick("contact", " ");
 	};
 
@@ -190,114 +190,74 @@ parallax.contact.preload=function(){
 	}
 
 
+//----- Transition ----- //
 
-	//----- Transition ----- //
-
-	function setRightHome(page, text){
+	function setHome(page, text){
 		
 		$("#home-nav").show().unbind('click').click(function(){
-			parallax[page].right();
 
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
 		});
 	}
 
-	function setLeftHome(page, text){
-		
-		$("#home-nav").show().unbind('click').click(function(){
-			parallax[page].left();
-			
-			
-		});
-	}
 
-	function setRightService(page, text){
-
-
-
-
-
+	function setService(page, text){
 		$("#services-nav").show().unbind('click').click(function(){
-			parallax[page].right();
-
-
-
-		});
-	}
-
-
-	function setLeftService(page, text){
-		
-		$("#services-nav").show().unbind('click').click(function(){
-			parallax[page].left();
 			
+
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+			
+
 		});
 	}
 
-	function setRightVision(page, text){
+
+	function setVision(page, text){
 		
 		$("#vision-nav").show().unbind('click').click(function(){
-			parallax[page].right();
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
 		});
 	}
 
 
-	function setLeftVision(page, text){
-		
-		$("#vision-nav").show().unbind('click').click(function(){
-			parallax[page].left();
-		});
-	}
-
-	function setRightCareer(page, text){
+	function setCareer(page, text){
 		
 		$("#career-nav").show().unbind('click').click(function(){
-			parallax[page].right();
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
 		});
 	}
 
-
-	function setLeftCareer(page, text){
-		
-		$("#career-nav").show().unbind('click').click(function(){
-			parallax[page].left();
-		});
-	}
-
-	function setRightTeam(page, text){
+	function setTeam(page, text){
 		
 		$("#team-nav").show().unbind('click').click(function(){
-			parallax[page].right();
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
 		});
 	}
 
 
-	function setLeftTeam(page, text){
-		
-		$("#team-nav").show().unbind('click').click(function(){
-			parallax[page].left();
-		});
-	}
-
-	function setRightContact(page, text){
+	function setContact(page, text){
 		
 		$("#contact-nav").show().unbind('click').click(function(){
-			parallax[page].right();
-		});
-	}
-
-
-	function setLeftContact(page, text){
-		
-		$("#contact-nav").show().unbind('click').click(function(){
-			parallax[page].left();
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
 		});
 	}
 
 
 
-/*
 
-parallax.preload = function(){
+
+
+
+
+
+
+ function hideAll(){
 	
 	$("#home-img").hide("slide", { direction: "left" }, 250 );
 	$("#services-img").hide("slide", { direction: "left" }, 250 );
@@ -305,21 +265,36 @@ parallax.preload = function(){
 	$("#career-img").hide("slide", { direction: "left" }, 250 );
 	$("#team-img").hide("slide", { direction: "left" }, 250 );
 	$("#contact-img").hide("slide", { direction: "left" }, 250 );
+
+
 };
+
 
 parallax.onload = function(){
-	$("#home-img").show("slide", { direction: "left" }, 250);
-	$("#services-img").show("slide", { direction: "left" }, 250);
-	$("#vision-img").show("slide", { direction: "left" }, 250);
-	$("#career-img").show("slide", { direction: "left" }, 250);
-	$("#team-img").show("slide", { direction: "left" }, 250);
-	$("#contact-img").show("slide", { direction: "left" }, 250);
+	$("#home-img").show("slide", { direction: "left" }, 400);
+	$("#services-img").show("slide", { direction: "left" }, 400);
+	$("#vision-img").show("slide", { direction: "left" }, 400);
+	$("#career-img").show("slide", { direction: "left" }, 400);
+	$("#team-img").show("slide", { direction: "left" }, 400);
+	$("#contact-img").show("slide", { direction: "left" }, 400);
 };
 
-*/
+
 
 parallax.home.show();
-parallax.speed = 750;
-parallax.scaling = 'linear';
+parallax.speed = 800;
+
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+
+
 
 });

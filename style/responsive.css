@@ -1,40 +1,37 @@
-/* 
-	1.Widescreen
-	2.Standard 
-	3.Tablet
-	4.Mobile
-*/
-
-/* ----- 1. Widescreen State ----- */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 1200px ){
 
 
+#home .page-image {
 
-
-
-
-
-/* ----- 2. Standard State ----- */
-
-@media only 
-screen and (max-width:1216px),
-screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
-
+	height:auto;
+	width:400px;
 }
 
-/* ----- 3. Tablet State ----- */
+#vision .page-image {
 
-@media only
-screen and (max-width:1023px),
-screen and (min-device-width:321px) and (max-device-width:768px) and (orientation: portrait) {
-
-
+	height:auto;
+	width:400px;
 }
 
-/* ----- 4. Mobile State ----- */
+#career .page-image {
+	height:auto;
+	width:350px;
+}
+}
 
-@media only 
-screen and (max-width : 767px),
-screen and (min-device-width : 320px) and (max-device-width : 480px) {
-body,p,ul,ol,dl,textarea,input {font-family: 'arial';}
+@media only screen 
+and (max-width : 1020px )
+{
+
+
+#home #content-text,
+#career #content-text,
+#vision #content-text,
+#services #content-text,
+#team #content-text {
+	width: 400px;
+}
+
 }
