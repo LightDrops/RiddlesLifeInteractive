@@ -40,26 +40,6 @@ ul, ol {
 .social li { 
 	display:inline; 
 	float:left; 
-	background-repeat:no-repeat;
-
-	-webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
-    margin-right: 10px;
-}
-
-.social li:hover {
--webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
 }
 
 .social li a { 
@@ -88,7 +68,7 @@ ul, ol {
 
 #navigation {
 	float: right;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 #navigation li {
@@ -311,3 +291,28 @@ background-color: #d35400;
 
 
 /* --END-- */
+
+/* ----- ROTATE CLASS ----- */
+
+.rotate {
+	-webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+    margin-right: 10px;
+}
+
+.rotate:hover {
+
+	-webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    
+}
