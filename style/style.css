@@ -50,11 +50,16 @@ ul, ol {
 	text-decoration:none; 
 }
 
-.social li.facebook { background-image:url("../images/facebook.png"); }
-.social li.googlePlus { background-image:url("../images/googlePlus.png"); }
-.social li.twitter { background-image:url("../images/twitter.png"); }
-.social li.linkedin { background-image:url("../images/linkedIn.png"); }
-.social li.behance { background-image:url("../images/behance.png"); }
+.social li.facebook { background-image:url("../images/facebook.png");
+	background-repeat: no-repeat;}
+.social li.googlePlus { background-image:url("../images/googlePlus.png");
+	background-repeat: no-repeat; }
+.social li.twitter { background-image:url("../images/twitter.png");
+	background-repeat: no-repeat; }
+.social li.linkedin { background-image:url("../images/linkedIn.png");
+	background-repeat: no-repeat; }
+.social li.behance { background-image:url("../images/behance.png");
+	background-repeat: no-repeat; }
 
 #company-logo {
 	margin-top: -40px;
@@ -81,6 +86,7 @@ ul, ol {
 	text-decoration: none;
 	font-size: 16px;
 	text-transform: uppercase;
+	letter-spacing: 1px;	
 }
 
 #navigation li a:hover {
@@ -314,5 +320,4 @@ background-color: #d35400;
 	-webkit-transform:rotate(360deg);
     -moz-transform:rotate(360deg);
     -o-transform:rotate(360deg);
-    
 }
