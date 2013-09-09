@@ -21,6 +21,12 @@ parallax.home.preload=function(){
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'white');
+		$('.home-bubble').css('background-image', 'url("images/bubble-active.png")');
+		$('.services-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.vision-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.career-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.team-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.contact-bubble').css('background-image', 'url("images/bubble-inactive.png")');
 	};
 
 parallax.services.preload=function(){
@@ -31,6 +37,13 @@ parallax.services.preload=function(){
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'white');
+		$('.home-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.services-bubble').css('background-image', 'url("images/bubble-active.png")');
+		$('.vision-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.career-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.team-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.contact-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+	
 	};
 
 parallax.vision.preload=function(){
@@ -41,6 +54,12 @@ parallax.vision.preload=function(){
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'white');
+		$('.home-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.services-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.vision-bubble').css('background-image', 'url("images/bubble-active.png")');
+		$('.career-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.team-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.contact-bubble').css('background-image', 'url("images/bubble-inactive.png")');
 
 	};
 
@@ -52,6 +71,12 @@ parallax.career.preload=function(){
 		$('#career-nav').css('color', 'black');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'white');
+		$('.home-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.services-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.vision-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.career-bubble').css('background-image', 'url("images/bubble-active.png")');
+		$('.team-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.contact-bubble').css('background-image', 'url("images/bubble-inactive.png")');
 
 	};
 
@@ -63,6 +88,12 @@ parallax.team.preload=function(){
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'black');
 		$('#contact-nav').css('color', 'white');
+		$('.home-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.services-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.vision-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.career-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.team-bubble').css('background-image', 'url("images/bubble-active.png")');
+		$('.contact-bubble').css('background-image', 'url("images/bubble-inactive.png")');
 
 	};
 
@@ -74,6 +105,12 @@ parallax.contact.preload=function(){
 		$('#career-nav').css('color', 'white');
 		$('#team-nav').css('color', 'white');
 		$('#contact-nav').css('color', 'black');
+		$('.home-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.services-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.vision-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.career-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.team-bubble').css('background-image', 'url("images/bubble-inactive.png")');
+		$('.contact-bubble').css('background-image', 'url("images/bubble-active.png")');
 
 	};
 
@@ -82,7 +119,7 @@ parallax.contact.preload=function(){
 
 
 		parallax.home.onload=function(){
-
+$('#home-nav').css('color', 'black');
 		setIgnoreHomeClick("home", " ");
 		setService("services", " ");
 		setVision("vision", " ");
@@ -151,6 +188,9 @@ parallax.contact.preload=function(){
 		$("#home-nav").show().unbind('click').click(function(){
 			parallax[page]();
 		});
+		$("#home-bubble").show().unbind('click').click(function(){
+			parallax[page]();
+		});
 	}
 
 	function setIgnoreServiceClick(page, text){
@@ -158,12 +198,19 @@ parallax.contact.preload=function(){
 		$("#services-nav").show().unbind('click').click(function(){
 			parallax[page]();
 		});
+		$("#services-bubble").show().unbind('click').click(function(){
+			parallax[page]();
+		});
+
 	}
 
 
 	function setIgnoreVisionClick(page, text){
 
 		$("#vision-nav").show().unbind('click').click(function(){
+			parallax[page]();
+		});
+		$("#vision-bubble").show().unbind('click').click(function(){
 			parallax[page]();
 		});
 	}
@@ -173,6 +220,9 @@ parallax.contact.preload=function(){
 		$("#career-nav").show().unbind('click').click(function(){
 			parallax[page]();
 		});
+		$("#career-bubble").show().unbind('click').click(function(){
+			parallax[page]();
+		});
 	}
 
 	function setIgnoreTeamClick(page, text){
@@ -180,11 +230,17 @@ parallax.contact.preload=function(){
 		$("#team-nav").show().unbind('click').click(function(){
 			parallax[page]();
 		});
+		$("#team-bubble").show().unbind('click').click(function(){
+			parallax[page]();
+		});
 	}
 
 	function setIgnoreContactClick(page, text){
 		
 		$("#contact-nav").show().unbind('click').click(function(){
+			parallax[page]();
+		});
+		$("#contact-bubble").show().unbind('click').click(function(){
 			parallax[page]();
 		});
 	}
@@ -195,7 +251,10 @@ parallax.contact.preload=function(){
 	function setHome(page, text){
 		
 		$("#home-nav").show().unbind('click').click(function(){
-
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+		});
+		$("#home-bubble").show().unbind('click').click(function(){
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
 		});
@@ -204,12 +263,12 @@ parallax.contact.preload=function(){
 
 	function setService(page, text){
 		$("#services-nav").show().unbind('click').click(function(){
-			
-
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
-			
-
+		});
+		$("#services-bubble").show().unbind('click').click(function(){
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
 		});
 	}
 
@@ -217,6 +276,10 @@ parallax.contact.preload=function(){
 	function setVision(page, text){
 		
 		$("#vision-nav").show().unbind('click').click(function(){
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+		});
+		$("#vision-bubble").show().unbind('click').click(function(){
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
 		});
@@ -229,11 +292,19 @@ parallax.contact.preload=function(){
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
 		});
+		$("#career-bubble").show().unbind('click').click(function(){
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+		});
 	}
 
 	function setTeam(page, text){
 		
 		$("#team-nav").show().unbind('click').click(function(){
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+		});
+		$("#team-bubble").show().unbind('click').click(function(){
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
 		});
@@ -243,6 +314,10 @@ parallax.contact.preload=function(){
 	function setContact(page, text){
 		
 		$("#contact-nav").show().unbind('click').click(function(){
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+		});
+		$("#contact-bubble").show().unbind('click').click(function(){
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
 		});
@@ -284,15 +359,6 @@ parallax.onload = function(){
 parallax.home.show();
 parallax.speed = 800;
 
-
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
 
 
 
