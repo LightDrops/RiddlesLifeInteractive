@@ -322,7 +322,7 @@ background-color: #d35400;
     transition-property: transform;
      
     overflow:hidden;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .rotate:hover {
@@ -387,4 +387,8 @@ background-color: #d35400;
 
 #vision-img {
 	left: -55px;
+}
+
+.red {
+	color: red;
 }
