@@ -119,7 +119,7 @@ parallax.contact.preload=function(){
 
 
 		parallax.home.onload=function(){
-$('#home-nav').css('color', 'black');
+		$('#home-nav').css('color', 'black');
 		setIgnoreHomeClick("home", " ");
 		setService("services", " ");
 		setVision("vision", " ");
@@ -191,6 +191,7 @@ $('#home-nav').css('color', 'black');
 		$("#home-bubble").show().unbind('click').click(function(){
 			parallax[page]();
 		});
+
 	}
 
 	function setIgnoreServiceClick(page, text){
@@ -255,6 +256,10 @@ $('#home-nav').css('color', 'black');
 			setTimeout(function(){parallax[page].right()},500);
 		});
 		$("#home-bubble").show().unbind('click').click(function(){
+			hideAll();
+			setTimeout(function(){parallax[page].right()},500);
+		});
+		$("#company-logo").show().unbind('click').click(function(){
 			hideAll();
 			setTimeout(function(){parallax[page].right()},500);
 		});
