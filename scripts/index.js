@@ -191,6 +191,9 @@ parallax.contact.preload=function(){
 		$("#home-bubble").show().unbind('click').click(function(){
 			parallax[page]();
 		});
+		$("#company-logo").show().unbind('click').click(function(){
+			parallax[page]();
+		});
 
 	}
 
