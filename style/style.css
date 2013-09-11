@@ -66,12 +66,15 @@ ul, ol {
 #company-logo {
 	margin-top: -40px;
 	float: right;
-	background-image: url("../images/logo.png");
-	background-repeat: no-repeat;
-	height:114;
-	width:130;
+	height:115;
+	width:88;
 	cursor: pointer;
 
+}
+
+#company-logo img {
+	height: 100%;
+	width: 100%;
 }
 
 
